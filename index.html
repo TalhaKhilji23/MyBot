@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khilji - Virtual Assistant</title>
+    <link rel="shortcut icon" href="https://www.shutterstock.com/image-vector/artificial-ai-chat-bot-icon-600nw-2281213775.jpg" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/4.1.17/framer-motion.min.js"></script>
+</head>
+
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen">
+    <section class="main flex flex-col items-center">
+        <div class="image-container mb-8">
+             <div class="image w-32 h-32 mx-auto mb-4 rounded-full bg-gray-800">
+        <img  class="image w-32 h-32 mx-auto mb-4 rounded-full bg-gray-800"  src = "https://www.shutterstock.com/image-vector/artificial-ai-chat-bot-icon-600nw-2281213775.jpg"/>
+      </div>
+            <h1 class="text-4xl text-center font-bold mt-4">K H I L J I</h1>
+            <p class="text-xl mt-2 w-64 text-center">I am a Virtual Assistant, How may I help you?</p>
+        </div>
+        <div class="input flex flex-col items-center">
+            <button class="talk bg-blue-600 flex justify-center items-center h-16  w-16 rounded-full shadow-lg transform hover:scale-110 transition-transform duration-200">
+                <i class="fas fa-microphone-alt text-2xl"></i>
+            </button>
+            <h1 class="content text-2xl mt-4">Click here to speak</h1>
+        </div>
+        <div id="recording-animation" class="hidden mt-8 flex flex-col items-center">
+            <div class="flex space-x-2">
+                <div class="w-4 h-4 bg-blue-500 rounded-full animate-bounce"></div>
+                <div class="w-4 h-4 bg-blue-500 rounded-full animate-bounce delay-150"></div>
+                <div class="w-4 h-4 bg-blue-500 rounded-full animate-bounce delay-300"></div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
